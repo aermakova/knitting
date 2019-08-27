@@ -1,0 +1,125 @@
+<div class="modal modal-search fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog full-size" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button></div>
+            <div class="modal-body">
+                <form class="search-form" action="" method="">
+                    <input class="input search-form__input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn search-form__btn" type="submit"><i class="icon icon-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-search fade" id="authModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog full-size" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button></div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="bx-auth login-wrap">
+                                <h3 class="page-title text-pink">АВТОРИЗАЦИЯ</h3>
+                                <form name="form_auth" method="post" target="_top" action="/auth/?login=yes&amp;backurl=%2F" class="login-form">
+                                    <input type="hidden" name="AUTH_FORM" value="Y">
+                                    <input type="hidden" name="TYPE" value="AUTH">
+                                    <input type="hidden" name="backurl" value="/auth/?backurl=%2F">
+                                    <div class="bx-auth row align-items-end">
+                                        <div class="col-md-6">
+                                            <div class="login-form__group">
+                                                <label for="USER_LOGIN">Логин</label>
+                                                <input id="USER_LOGIN" type="text" name="USER_LOGIN" maxlength="50" value="" placeholder="Логин" class="input bx-auth-input">
+                                            </div>
+                                            <div class="login-form__group">
+                                                <label for="USER_PASSWORD">Пароль</label>
+                                                <input id="USER_PASSWORD" type="password" name="USER_PASSWORD" maxlength="50" value="" placeholder="Пароль" class="input bx-auth-input" autocomplete="off">
+                                            </div>
+                                            <div class="login-form__group">
+                                                <label class="form-checkbox"><input type="checkbox" name="check" data-name="Чекбокс: " data-required="">
+                                                    <i class="form-checkbox__check"></i> Запомнить меня </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="login-form__group">
+                                                <button type="submit" name="Login" class="btn fx-bubbleUp">Войти</button>
+                                            </div>
+                                            <div class="login-form__group">
+                                                <a href="/auth/?forgot_password=yes&amp;backurl=%2F" rel="nofollow">Забыли свой пароль?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3 class="page-title text-pink">Регистрация</h3>
+                                            <noindex>
+                                                <p>
+                                                    <a href="/auth/?register=yes&amp;backurl=%2F" rel="nofollow">Заполните, пожалуйста, регистрационную форму</a>
+                                                </p>
+                                            </noindex>
+                                            <p>Войти при помощи соцсетей:</p>
+                                            <div class="bx-auth-serv-icons">
+                                                <a title="Livejournal" href="javascript:void(0)" onclick="BxShowAuthService('Livejournal', '')" id="bx_auth_href_Livejournal"><i class="bx-ss-icon livejournal"></i></a>
+                                                <a title="Mail.Ru" href="javascript:void(0)" onclick="BxShowAuthService('MailRuOpenID', '')" id="bx_auth_href_MailRuOpenID"><i class="bx-ss-icon openid-mail-ru"></i></a>
+                                                <a title="Liveinternet" href="javascript:void(0)" onclick="BxShowAuthService('Liveinternet', '')" id="bx_auth_href_Liveinternet"><i class="bx-ss-icon liveinternet"></i></a>
+                                                <a title="Blogger" href="javascript:void(0)" onclick="BxShowAuthService('Blogger', '')" id="bx_auth_href_Blogger"><i class="bx-ss-icon blogger"></i></a>
+                                                <a title="OpenID" href="javascript:void(0)" onclick="BxShowAuthService('OpenID', '')" id="bx_auth_href_OpenID"><i class="bx-ss-icon openid"></i></a>
+                                            </div>
+                                            <div class="bx-auth">
+
+                                                <div class="bx-auth-service-form" id="bx_auth_serv" style="display:none">
+                                                    <div id="bx_auth_serv_Livejournal" style="display:none">
+                                                        <span class="bx-ss-icon livejournal"></span>
+                                                        <input type="text" name="OPENID_IDENTITY_LIVEJOURNAL" value="" size="20">
+                                                        <span>.livejournal.com</span>
+                                                        <input type="hidden" name="sessid" id="sessid_5" value="e55acd3ac9b7d282e15ca0f2e565b50d">
+                                                        <input type="hidden" name="auth_service_error" value="">
+                                                        <input type="submit" class="button" name="" value="Войти">
+                                                    </div>
+                                                    <div id="bx_auth_serv_MailRuOpenID" style="display:none">
+                                                        <span class="bx-ss-icon openid-mail-ru"></span>
+                                                        <input type="text" name="OPENID_IDENTITY_MAILRU" value="" size="20">
+                                                        <span>@mail.ru</span>
+                                                        <input type="hidden" name="sessid" id="sessid_6" value="e55acd3ac9b7d282e15ca0f2e565b50d">
+                                                        <input type="hidden" name="auth_service_error" value="">
+                                                        <input type="submit" class="button" name="" value="Войти">
+                                                    </div>
+                                                    <div id="bx_auth_serv_Liveinternet" style="display:none">
+                                                        <span class="bx-ss-icon liveinternet"></span>
+                                                        <span>liveinternet.ru/users/</span>
+                                                        <input type="text" name="OPENID_IDENTITY_LIVEINTERNET" value="" size="15">
+                                                        <input type="hidden" name="sessid" id="sessid_7" value="e55acd3ac9b7d282e15ca0f2e565b50d">
+                                                        <input type="hidden" name="auth_service_error" value="">
+                                                        <input type="submit" class="button" name="" value="Войти">
+                                                    </div>
+                                                    <div id="bx_auth_serv_Blogger" style="display:none">
+                                                        <span class="bx-ss-icon blogger"></span>
+                                                        <input type="text" name="OPENID_IDENTITY_BLOGGER" value="" size="20">
+                                                        <span>.blogspot.com</span>
+                                                        <input type="hidden" name="sessid" id="sessid_8" value="e55acd3ac9b7d282e15ca0f2e565b50d">
+                                                        <input type="hidden" name="auth_service_error" value="">
+                                                        <input type="submit" class="button" name="" value="Войти">
+                                                    </div>
+                                                    <div id="bx_auth_serv_OpenID" style="display:none">
+                                                        <span class="bx-ss-icon openid"></span>
+                                                        <span>OpenID:</span>
+                                                        <input type="text" name="OPENID_IDENTITY_OPENID" value="" size="30">
+                                                        <input type="hidden" name="sessid" id="sessid_9" value="e55acd3ac9b7d282e15ca0f2e565b50d">
+                                                        <input type="hidden" name="auth_service_error" value="">
+                                                        <input type="submit" class="button" name="" value="Войти">
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" name="auth_service_id" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

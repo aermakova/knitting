@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>РАВНЫЙ КОНСУЛЬТАНТ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+
+//= blocks/header.html
+<main class="main">
+    <section class="head">
+        <h1 class="head-title text-white">АВТОРИЗАЦИЯ</h1>
+    </section>
+    <section class="page">
+        <div class="container-fluid">
+            //= blocks/breadcrumbs.html
+            <div class="row">
+                //= blocks/aside-left.html
+                <div class="col-lg-6">
+                    <div class="bx-auth login-wrap">
+                        <h3 class="page-title text-pink">АВТОРИЗАЦИЯ</h3>
+                        <form method="post" action="/auth/?register=yes&amp;backurl=%2Fcontent%2Fevents%2F" name="bform" enctype="multipart/form-data" class="login-form">
+                                <input type="hidden" name="backurl" value="/auth/?backurl=%2Fcontent%2Fevents%2F">
+                                <input type="hidden" name="AUTH_FORM" value="Y">
+                                <input type="hidden" name="TYPE" value="REGISTRATION">
+                                <div class="bx-auth row align-items-end">
+                                    <div class="col-md-6">
+                                        <div class="login-form__group">
+                                            <label for="USER_LOGIN">Логин</label>
+                                            <input id="USER_LOGIN" type="text" name="USER_LOGIN" maxlength="50" value="" placeholder="Логин" class="input bx-auth-input">
+                                        </div>
+                                        <div class="login-form__group">
+                                            <label for="USER_PASSWORD">Пароль</label>
+                                            <input id="USER_PASSWORD" type="password" name="USER_PASSWORD" maxlength="50" value="" placeholder="Пароль" class="input bx-auth-input" autocomplete="off">
+                                        </div>
+                                        <div class="login-form__group">
+                                            <label class="form-checkbox"><input type="checkbox" name="check" data-name="Чекбокс: " data-required="">
+                                                <i class="form-checkbox__check"></i>Запомнить меня </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="login-form__group">
+                                            <button type="submit" name="Register" class="btn fx-bubbleUp">Войти</button>
+                                        </div>
+                                        <div class="login-form__group">
+                                            <a href="/auth/?forgot_password=yes&amp;backurl=%2Fcontent%2Fevents%2F" rel="nofollow">Забыли свой пароль?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Войти при помощи соцсетей:</p>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+//= blocks/subs.html
+//= blocks/partners.html
+
+//= blocks/footer.html
+//= blocks/popup.html
+//= blocks/script.html
+
+</body>
+</html>

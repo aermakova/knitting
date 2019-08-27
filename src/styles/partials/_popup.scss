@@ -1,0 +1,38 @@
+.modal-search{
+  &.modal{
+    padding-right: 0!important;
+  }
+  .modal-dialog{
+    &.full-size{
+      width: 100%;
+      min-width: 100%;
+      margin: 0;
+    }
+  }
+  .modal-content{
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+}
+.modal-header {
+  padding: 20px;
+  border-bottom: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+.modal-body{
+  padding: 0;
+  height: auto;
+  padding-bottom: 30px;
+  max-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

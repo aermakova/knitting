@@ -1,0 +1,200 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../../../../dest/img/sprites/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 45.1846em 219.7em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../../../../dest/img/sprites/sprite.png");
+}
+
+
+
+  .icon.arrow-left:before {
+      background-position: 0em 0em;
+      width: 25.0738em;
+      height: 25.0738em;
+  }
+
+
+
+
+  .icon.arrow-right:before {
+      background-position: 0em -25.1em;
+      width: 45.1846em;
+      height: 45.1847em;
+  }
+
+
+
+
+  .icon.arrow-top:before {
+      background-position: 0em -70.3em;
+      width: 28.4929em;
+      height: 28.4929em;
+  }
+
+
+
+
+  .icon.calendar:before {
+      background-position: 0em -98.8em;
+      width: 6.1256em;
+      height: 5.744400000000001em;
+  }
+
+
+
+
+  .icon.email-ico:before {
+      background-position: 0em -104.6em;
+      width: 6.3667em;
+      height: 6.9201999999999995em;
+  }
+
+
+
+
+  .icon.email-ico-1:before {
+      background-position: 0em -111.6em;
+      width: 7.1em;
+      height: 6.6em;
+  }
+
+
+
+
+  .icon.facebook:before {
+      background-position: 0em -118.2em;
+      width: 2.2em;
+      height: 2.2em;
+  }
+
+
+
+
+  .icon.facebook-1:before {
+      background-position: 0em -120.4em;
+      width: 2.2em;
+      height: 2.2em;
+  }
+
+
+
+
+  .icon.glass:before {
+      background-position: 0em -122.6em;
+      width: 45.1em;
+      height: 45.1em;
+  }
+
+
+
+
+  .icon.instagram:before {
+      background-position: 0em -167.7em;
+      width: 2.2em;
+      height: 2.2em;
+  }
+
+
+
+
+  .icon.instagram-1:before {
+      background-position: 0em -169.9em;
+      width: 2.2em;
+      height: 2.2em;
+  }
+
+
+
+
+  .icon.odnoklassniki:before {
+      background-position: 0em -172.1em;
+      width: 2.2em;
+      height: 2.2em;
+  }
+
+
+
+
+  .icon.odnoklassniki-1:before {
+      background-position: 0em -174.3em;
+      width: 2.2em;
+      height: 2.2em;
+  }
+
+
+
+
+  .icon.pin:before {
+      background-position: 0em -176.5em;
+      width: 1.6738em;
+      height: 2.2424em;
+  }
+
+
+
+
+  .icon.pin-ico:before {
+      background-position: 0em -178.8em;
+      width: 5.1em;
+      height: 6.937099999999999em;
+  }
+
+
+
+
+  .icon.question-ico:before {
+      background-position: 0em -185.8em;
+      width: 4.5112000000000005em;
+      height: 7.6153em;
+  }
+
+
+
+
+  .icon.questions-ico:before {
+      background-position: 0em -193.5em;
+      width: 30.4364em;
+      height: 19.523400000000002em;
+  }
+
+
+
+
+  .icon.user:before {
+      background-position: 0em -213.1em;
+      width: 2.3152em;
+      height: 2.1229em;
+  }
+
+
+
+
+  .icon.vk:before {
+      background-position: 0em -215.3em;
+      width: 2.2em;
+      height: 2.2em;
+  }
+
+
+
+
+  .icon.vk-1:before {
+      background-position: 0em -217.5em;
+      width: 2.2em;
+      height: 2.2em;
+  }
+
+
+
+
+

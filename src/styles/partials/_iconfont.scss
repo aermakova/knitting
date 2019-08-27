@@ -1,0 +1,102 @@
+@font-face {
+	font-family: "icons";
+	src: url('../../dest/fonts/icons.eot');
+	src: url('../../dest/fonts/icons.eot?#iefix') format('eot'),
+		url('../../dest/fonts/icons.woff2') format('woff2'),
+		url('../../dest/fonts/icons.woff') format('woff'),
+		url('../../dest/fonts/icons.ttf') format('truetype'),
+		url('../../dest/fonts/icons.svg#icons') format('svg');
+}
+
+.icon:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-arrow-left:before {
+	content: "\E001";
+}
+
+.icon-arrow-right:before {
+	content: "\E002";
+}
+
+.icon-arrow-top:before {
+	content: "\E003";
+}
+
+.icon-calendar:before {
+	content: "\E004";
+}
+
+.icon-email-ico-1:before {
+	content: "\E005";
+}
+
+.icon-email-ico:before {
+	content: "\E006";
+}
+
+.icon-facebook-1:before {
+	content: "\E007";
+}
+
+.icon-facebook:before {
+	content: "\E008";
+}
+
+.icon-glass:before {
+	content: "\E009";
+}
+
+.icon-instagram-1:before {
+	content: "\E00A";
+}
+
+.icon-instagram:before {
+	content: "\E00B";
+}
+
+.icon-odnoklassniki-1:before {
+	content: "\E00C";
+}
+
+.icon-odnoklassniki:before {
+	content: "\E00D";
+}
+
+.icon-pin-ico:before {
+	content: "\E00E";
+}
+
+.icon-pin:before {
+	content: "\E00F";
+}
+
+.icon-question-ico:before {
+	content: "\E010";
+}
+
+.icon-questions-ico:before {
+	content: "\E011";
+}
+
+.icon-user:before {
+	content: "\E012";
+}
+
+.icon-vk-1:before {
+	content: "\E013";
+}
+
+.icon-vk:before {
+	content: "\E014";
+}

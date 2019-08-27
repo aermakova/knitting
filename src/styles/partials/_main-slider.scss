@@ -1,0 +1,107 @@
+.slider {
+  height: 535px;
+  position: relative;
+  overflow: hidden;
+  touch-action: manipulation;
+  @media (max-width: 991px){
+    height: 406px;
+  }
+  &__content{
+    padding: 0 0 80px 58.333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 535px;
+    @media (max-width: 1400px){
+      padding-left: 49%;
+    }
+    @media (max-width: 991px){
+      padding: 60px 0 0 0;
+      justify-content: flex-start;
+      height: 406px;
+    }
+    @media (max-width: 576px){
+      padding-top: 40px;
+    }
+    @media (max-width: $xs-layout){
+      .btn{
+        width: 100%;
+      }
+    }
+    .btn{
+      align-self: baseline;
+    }
+  }
+  &__title{
+    font-family: 'ProximaSoft-Extrabld';
+    font-weight: bold;
+    font-style: normal;
+    font-size: $section-title-font-size;
+    line-height: 1;
+    margin-bottom: 20px;
+    @media (max-width: 1400px){
+      font-size: 51px;
+    }
+    @media (max-width: 1280px){
+      font-size: 47px;
+    }
+    @media (max-width: 1024px){
+      font-size: 41px;
+    }
+    @media (max-width: 991px){
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+  }
+  &__subtitle{
+    font-size: $section-subtitle-font-size;
+    margin-bottom: 40px;
+    @media (max-width: 1400px){
+      font-size: 18px;
+    }
+    @media (max-width: 1280px){
+      font-size: 16px;
+    }
+    @media (max-width: 991px){
+      font-size: 11px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.slider__item, .slider___item{
+  width: 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: 535px;
+  @media (max-width: 991px){
+    height: 406px;
+    .btn{
+      padding: 10px 30px;
+    }
+  }
+}
+.slider__item{
+  @media (max-width: 991px){
+    background: none!important;
+  }
+  &-1{
+    background-image: url("../img/slyde1.jpg");
+  }
+  &-2{
+    background-image: url("../img/slyde2.jpg");
+  }
+  &-3{
+    background-image: url("../img/slyde3.jpg");
+  }
+  &-4{
+    background-image: url("../img/slyde4.jpg");
+  }
+}
+.slider___item{
+  background-position: center left;
+  @media (min-width: 992px){
+    background: none!important;
+  }
+}

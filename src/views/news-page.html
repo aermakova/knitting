@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Новости</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+
+//= blocks/header.html
+<main class="main">
+    <section class="second-head" style="min-height: 230px; padding: 0; background: #d5037f; background: url(img/news-page/news-bg.png) no-repeat right, linear-gradient(to right, #d5037f 0%,#f80140 33%,#ff7d00 66%,#e6f315 100%); background-size: auto 160%, auto; background-position: 125% 14%;">
+        <h1 class="head-title-2 text-white">НОВОСТИ</h1>
+    </section>
+    <section class="page">
+        <div class="container-fluid">
+            //= blocks/breadcrumbs.html
+            <div class="row">
+                //= blocks/aside-left.html
+                <div class="col-lg-9">
+                    <form name="arrFilter_form filter" action="" method="get">
+                        <table class="data-table filter-table" cellspacing="0" cellpadding="2">
+                            <thead>
+                            <tr>
+                                <td colspan="3" align="left" class="filter-table__title">Фильтр</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td valign="middle" class="filter-table__interval">Выбрать период:</td>
+                                <td valign="bottom" class="filter-table__date">
+                                    <input type="text" id="arrFilter_DATE_ACTIVE_FROM_1" name="arrFilter_DATE_ACTIVE_FROM_1" value="21.03.2019" size="10" class="inputselect inputfield filter-table__input">
+                                    <img src="img/calendar-icon.jpg" alt="Выбрать дату в календаре" class="calendar-icon" border="0">
+                                    <input type="text" id="arrFilter_DATE_ACTIVE_FROM_2" name="arrFilter_DATE_ACTIVE_FROM_2" value="23.03.2019" size="10" class="inputselect inputfield filter-table__input">
+                                    <img src="img/calendar-icon.jpg" alt="Выбрать дату в календаре" class="calendar-icon" border="0"></td>
+                                <td valign="middle" class="filter-table__city">Город:</td>
+                                <td valign="bottom" class="filter-table__select">
+                                    <div class="select filter-select">
+                                        <a href="#" class="select__selected input input--line"></a>
+                                        <ul class="select__drop">
+                                            <li class="select__item">Москва</li>
+                                            <li class="select__item">Владивосток</li>
+                                            <li class="select__item">Санкт-Петербург</li>
+                                            <li class="select__item">Александровск-Сахалинский</li>
+                                        </ul>
+                                        <input type="hidden" id="selected"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                            <tfoot valign="bottom">
+                            <tr>
+                                <td colspan="2" style="padding-top: 20px">
+                                    <button type="submit" name="set_filter" class="btn fx-bubbleUp">Фильтр</button>
+                                    <input type="hidden" name="set_filter" value="Y">&nbsp;&nbsp;
+                                    <button type="submit" name="del_filter" class="btn fx-bubbleUp">Сбросить</button>
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </form>
+                    <div class="news-item mt-4">
+                        <div class="row">
+                            <div class="col-lg-4"><img src="img/news/news-1.jpg" class="news-item__img img-fluid" alt=""></div>
+                            <div class="col-lg-8">
+                                <p class="news-item__title">"Помощь равных". <br> Интервью Татьяны Головановой для АСИ 1 октября 2018</p>
+                                <time datetime="2018-10-01" class="news-item__date">1 октября 2018</time>
+                                <p>«Любой руководитель медицинского учреждения знает, что  более 80% жалоб в медицинском учреждении — это жалобы не на процесс лечения, а на нехватку информации».На первом этапе оно может включать УЗИ органов малого таза, гистологию (получают посредством биопсии), компьютерную томографию (КТ) или магнитно-резонансную томографию (МРТ). Как бы убедительно ни выглядела опухоль, единственным способом установить диагноз является биопсия с последующим гистологическим исследованием.</p>
+                                <a href="/partners/" class="btn fx-bubbleUp">ЧИТАТЬ ДАЛЕЕ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="news-single">
+                            <div class="news-single__thumb">
+                                <img src="img/news/news-2.jpg" class="news-single__img img-fluid" alt="">
+                            </div>
+                            <div class="news-single__inner">
+                                <h4 class="news-single__title"><a href="#">Равные консультанты в Красноярске: кабинет открыт, консультации начались</a></h4>
+                                <time datetime="2018-10-01" class="news-single__date">17 августа 2018</time>
+                                <p class="news-single__desc">«Любой руководитель медицинского учреждения знает, что  более 80% жалоб в медицинском учреждении — это жалобы не на процесс лечения, а на нехватку информации».На первом этапе оно может включать УЗИ органов малого таза, гистологию (получают посредством биопсии), компьютерную томографию (КТ) или магнитно-резонансную томографию (МРТ). Как бы убедительно ни выглядела опухоль, единственным способом установить диагноз является биопсия с последующим гистологическим исследованием.</p>
+                                <div class="news-single__btn">
+                                    <a class="btn fx-bubbleUp" href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="news-single">
+                        <div class="news-single__thumb">
+                            <img src="img/news/news-2.jpg" class="news-single__img img-fluid" alt="">
+                        </div>
+                        <div class="news-single__inner">
+                            <h4 class="news-single__title"><a href="#">Равные консультанты в Красноярске: кабинет открыт, консультации начались</a></h4>
+                            <time datetime="2018-10-01" class="news-single__date">17 августа 2018</time>
+                            <p class="news-single__desc">Краткое описани видеоролика 3, дабы поятно было стоит ли кликать по ссылке.</p>
+                            <div class="news-single__btn">
+                                <a class="btn fx-bubbleUp" href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="news-single">
+                        <div class="news-single__thumb">
+                            <img src="img/news/news-2.jpg" class="news-single__img img-fluid" alt="">
+                        </div>
+                        <div class="news-single__inner">
+                            <h4 class="news-single__title"><a href="#">Равные консультанты в Красноярске: кабинет открыт, консультации начались</a></h4>
+                            <time datetime="2018-10-01" class="news-single__date">17 августа 2018</time>
+                            <p class="news-single__desc">Краткое описани видеоролика 3, дабы поятно было стоит ли кликать по ссылке.</p>
+                            <div class="news-single__btn">
+                                <a class="btn fx-bubbleUp" href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="news-single">
+                        <div class="news-single__thumb">
+                            <img src="img/news/news-2.jpg" class="news-single__img img-fluid" alt="">
+                        </div>
+                        <div class="news-single__inner">
+                            <h4 class="news-single__title"><a href="#">Равные консультанты в Красноярске: кабинет открыт, консультации начались</a></h4>
+                            <time datetime="2018-10-01" class="news-single__date">17 августа 2018</time>
+                            <p class="news-single__desc">Краткое описани видеоролика 3, дабы поятно было стоит ли кликать по ссылке.</p>
+                            <div class="news-single__btn">
+                                <a class="btn fx-bubbleUp" href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+//= blocks/subs.html
+//= blocks/partners.html
+
+//= blocks/footer.html
+//= blocks/popup.html
+//= blocks/script.html
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+.input{
+  font-size: 16px;
+  padding: 10px 20px;
+  line-height: normal;
+  outline: none;
+  -webkit-appeareance: none;
+  width: 100%;
+  height: 46px;
+  color: #002746;
+  background-color: $white;
+  border: 1px solid #8d8c8c;
+  font-style: normal;
+  font-weight: 400;
+  &:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  }
+  @media screen and (max-width: 1366px){
+    padding: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 5px 10px;
+    height: 30px;
+  }
+  &--border{
+    border-width: 1px;
+    border-style: solid;
+    border-color: $dark-blue;
+  }
+}
+
+.form{
+  label{
+    display: block;
+    margin-bottom: 15px;
+  }
+  textarea{
+    height: 120px;
+  }
+}
+
+.error {
+  border: 2px solid #e48484 !important;
+}

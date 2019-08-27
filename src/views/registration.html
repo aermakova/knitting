@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>РАВНЫЙ КОНСУЛЬТАНТ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+
+//= blocks/header.html
+<main class="main">
+    <section class="head">
+        <h1 class="head-title text-white">РЕГИСТРАЦИЯ</h1>
+    </section>
+    <section class="page">
+        <div class="container-fluid">
+            //= blocks/breadcrumbs.html
+            <div class="row">
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="bx-auth login-wrap">
+                        <noindex>
+                            <form method="post" action="/auth/?register=yes&amp;backurl=%2Fcontent%2Fevents%2F" name="bform" enctype="multipart/form-data" class="login-form">
+                                <input type="hidden" name="backurl" value="/auth/?backurl=%2Fcontent%2Fevents%2F">
+                                <input type="hidden" name="AUTH_FORM" value="Y">
+                                <input type="hidden" name="TYPE" value="REGISTRATION">
+                                <div class="bx-registration-table data-table row">
+                                    <div class="col-md-6">
+                                        <div class="login-form__group">
+                                            <label for="USER_NAME">Имя</label>
+                                            <input id="USER_NAME" type="text" name="USER_NAME" maxlength="50" value="" placeholder="Имя:" class="input bx-auth-input">
+                                        </div>
+                                        <div class="login-form__group">
+                                            <label for="USER_LAST_NAME">Логин (мин. 3 символа)</label>
+                                            <input id="USER_LAST_NAME" type="text" name="USER_LAST_NAME" maxlength="50" value="" placeholder="Фамилия:" class="input bx-auth-input">
+                                        </div>
+                                        <div class="login-form__group">
+                                            <label for="USER_LOGIN" class="starrequired">Логин (мин. 3 символа)</label>
+                                            <input id="USER_LOGIN" type="text" name="USER_LOGIN" maxlength="50" value="" placeholder="Логин (мин. 3 символа)*" class="input bx-auth-input">
+                                        </div>
+                                        <div class="login-form__group">
+                                            <label for="USER_PASSWORD" class="starrequired">Пароль</label>
+                                            <input id="USER_PASSWORD" type="password" name="USER_PASSWORD" maxlength="50" value="" placeholder="Пароль*" class="input bx-auth-input" autocomplete="off">
+                                        </div>
+                                        <div class="login-form__group">
+                                            <label for="USER_CONFIRM_PASSWORD" class="starrequired">Подтверждение пароля</label>
+                                            <input id="USER_CONFIRM_PASSWORD" type="password" name="USER_CONFIRM_PASSWORD" maxlength="50" placeholder="Подтверждение пароля*" value="" class="input bx-auth-input" autocomplete="off">
+                                        </div>
+                                        <div class="login-form__group">
+                                            <label for="USER_EMAIL" class="starrequired">E-Mail</label>
+                                            <input id="USER_EMAIL" type="text" name="USER_EMAIL" maxlength="255" value="" placeholder="E-Mail*" class="input bx-auth-input">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="login-form__group">
+                                            <p class="size-middle">Защита от автоматической регистрации</p>
+                                        </div>
+                                        <div class="login-form__group">
+                                            <label for="captcha_sid" class="captcha-label"></label>
+                                            <input id="captcha_sid" type="hidden" name="captcha_sid" value="04fbe016e6fad966ca039b4a8dab6261">
+                                            <img src="img/captcha.jpg" width="180" height="40" alt="CAPTCHA">
+                                        </div>
+                                        <div class="login-form__group">
+                                            <label for="captcha_word" class="starrequired">Введите слово на картинке</label>
+                                            <input id="captcha_word" type="text" name="captcha_word" maxlength="50" value="" placeholder="Введите слово на картинке*" class="input">
+                                        </div>
+                                        <div class="login-form__group">
+                                            <p>Пароль должен быть не менее 6 символов длиной.</p>
+                                        </div>
+                                        <div class="login-form__group">
+                                            <p>Обязательные для заполнения поля</p>
+                                        </div>
+                                        <div class="login-form__group">
+                                            <button type="submit" name="Register" class="btn fx-bubbleUp">Регистрация</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-center">
+                                    <a href="#authModal" data-toggle="modal" rel="nofollow"><b>Авторизация</b></a>
+                                </p>
+                            </form>
+                        </noindex>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+//= blocks/subs.html
+//= blocks/partners.html
+
+//= blocks/footer.html
+//= blocks/popup.html
+//= blocks/script.html
+
+</body>
+</html>

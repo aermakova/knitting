@@ -1,0 +1,116 @@
+.about{
+  background: linear-gradient(to bottom, #ffffff 0%,#bbc1c7 60%, #B2C5D9 100%);
+  overflow: hidden;
+  @media (max-width: 991px){
+    background: linear-gradient(to bottom,#fff 0,#bbc1c7 95%,#b2c5d9 100%);
+  }
+  &-title{
+    font-family: 'ProximaSoft-Extrabld';
+    position: relative;
+    font-size: $section-title-font-size;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    @media (max-width: 991px) {
+      font-size: 45px;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 5px;
+      border-radius: 3px;
+      background: #fff;
+      bottom: -6px;
+      left: 0;
+    }
+  }
+  &__top{
+    padding: 50px 0;
+    @media (max-width: 991px) {
+      padding: 30px 0 10px 0;
+    }
+    .col-lg-4{
+      &:first-of-type{
+        .testi__title{
+          margin-top: 14px;
+          @media (max-width: 991px) {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  &__bottom{
+    p{
+      margin-bottom: 20px;
+      &:last-of-type{
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &-testi{
+    padding: 30px 50px 30px 15px;
+    height: 100%;
+    @media (max-width: 1500px) {
+      padding: 30px 10px 30px 10px;
+    }
+    @media (max-width: 991px) {
+      padding: 15px 10px 20px 10px;
+    }
+  }
+  &-team{
+    flex: 0 0 50%;
+    max-width: 50%;
+    @media (max-width: 991px){
+      margin: 0 -7%;
+      width: 100%;
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+    .news-item__img{
+      margin-bottom: -21%;
+      position: relative;
+      right: -20px;
+      @media (max-width: 1240px){
+        width: 124%;
+        max-width: 124%;
+        right: 20px;
+      }
+      @media (max-width: 991px){
+        margin-bottom: 0;
+        width: 116%;
+        max-width: 116%;
+        right: 0;
+      }
+    }
+  }
+}
+.testi{
+  position: relative;
+  &__icon{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 20px;
+    font-size: 50px;
+    color: $pink;
+    position: relative;
+    bottom: 4px;
+    @media (max-width: 991px) {
+      font-size: 39px;
+    }
+  }
+  &__title{
+    font-size: 22px;
+    padding: 0;
+    margin-bottom: 10px;
+    position: relative;
+    span{
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    @media (max-width: 1140px) {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+}

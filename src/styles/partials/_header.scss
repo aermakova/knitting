@@ -1,0 +1,92 @@
+.header{
+  &.is-sticky {
+    animation: .4s ease-in-out 0s normal both 1 running fadeInDown;
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 3px rgba(0,0,0,.2);
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: box-shadow 0.5s ease-in-out 0s;
+    width: 100%;
+    z-index: 99;
+    @media (max-width: 992px){
+      overflow-y: auto;
+      max-height: 100%;
+    }
+    .header-top{
+      display: none;
+    }
+  }
+  a{
+    text-decoration: none;
+  }
+  &-top{
+    padding: 10px 20px 0 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-bottom{
+    padding: 10px 0;
+  }
+  &-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .login{
+      margin-right: 50px;
+      color: $grey;
+      a{
+        color: $grey;
+      }
+    }
+    .icon-user{
+      margin-left: 10px;
+    }
+  }
+  .search-btn{
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    color: $pink;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+}
+.logo-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  position: relative;
+  &-1{
+    padding-right: 20px;
+    &:after{
+      content: '';
+      width: 1px;
+      height: 100%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      background-color: #707070;
+    }
+  }
+  &-2{
+    padding-left: 20px;
+  }
+}
+
+//@media (min-width: 992px){
+//  .navbar-expand-lg .navbar-nav{
+//    justify-content: space-between;
+//    width: 100%;
+//  }
+//}
+//.nav-item:focus, .nav-item:hover, .dropdown-item:focus, .dropdown-item:hover{
+//  background-color: transparent;
+//  color: $pink;
+//}

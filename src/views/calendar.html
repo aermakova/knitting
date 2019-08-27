@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>РАВНЫЙ КОНСУЛЬТАНТ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+
+//= blocks/header.html
+<main class="main">
+    <section class="head">
+        <h1 class="head-title text-white">КАЛЕНДАРЬ МЕРОПРИЯТИЙ</h1>
+    </section>
+    <section class="page">
+        <div class="container-fluid">
+            //= blocks/breadcrumbs.html
+            <div class="row">
+                //= blocks/aside-left.html
+                <div class="col-lg-9">
+                    <div class="timetable-tiva">
+                        <div class="mibok-wrapper">
+                            <form name="arrMibokTt_form" action="/content/events/" method="post">
+                                <div class="mibok-wrapper-timetable">
+                                    <div class="mibok-wrapper-filter">
+                                        <div class="row align-items-center">
+
+                                            <div class="col-lg-4">
+                                                <div class="mibok-add-filter">
+                                                    <div class="mibok-dropdown select-dropdown">
+                                                        <a href="#" class="mibok-filter-name" data-toggle="dropdown" aria-expanded="false">Город<span class="ic-m-t-bottom"></span></a>
+                                                        <div class="dropdown-menu" x-placement="bottom-start">
+                                                            <ul class="scroll-visible ps-container ps-theme-default" data-ps-id="">
+                                                                <li>
+                                                                    <div>
+                                                                        <input type="checkbox" class="checkbox" name="NAME[]" id="NAME[]0" value="Город 1"><label for="NAME[]0" title="Город 1">Город 1</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <input type="checkbox" class="checkbox" name="NAME[]" id="NAME[]1" value="Город 2"><label for="NAME[]1" title="Город 2">Город 2</label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <div class="mibok-add-filter">
+                                                    <div class="mibok-dropdown select-dropdown">
+                                                        <a href="#" class="mibok-filter-name" data-toggle="dropdown" aria-expanded="false">Категория мероприятия<span class="ic-m-t-bottom"></span></a>
+                                                        <div class="dropdown-menu" x-placement="bottom-start">
+                                                            <ul class="scroll-visible ps-container ps-theme-default" data-ps-id="">
+                                                                <li>
+                                                                    <div>
+                                                                        <input type="checkbox" class="checkbox" name="NAME[]" id="NAME[]0" value="Мероприятие 2"><label for="NAME[]0" title="Мероприятие 2">Мероприятие 2</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <input type="checkbox" class="checkbox" name="NAME[]" id="NAME[]1" value="Семинар по подготовке равных I ступень"><label for="NAME[]1" title="Семинар по подготовке равных I ступень">Семинар по подготовке равных I ступень</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <input type="checkbox" class="checkbox" name="NAME[]" id="NAME[]2" value="Чего-то там активность"><label for="NAME[]2" title="Чего-то там активность">Чего-то там активность</label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <div class="mibok-add-filter">
+                                                    <div class="mibok-dropdown select-dropdown">
+                                                        <div class="mibok-item-filter" data-toggle="dropdown">
+                                                            <div class="mibok-filter-name">Регулярность проведения<span class="ic-m-t-bottom"></span></div>
+
+                                                        </div>
+                                                        <div class="dropdown-menu">
+                                                            <ul class="scroll-visible ps-container ps-theme-default" data-ps-id="0f46c49d-7ff3-17b4-2a4b-d2e48d21a18d">
+                                                                <li>
+                                                                    <div>
+                                                                        <input type="checkbox" class="checkbox" name="PROPERTY[PERIOD][]" id="PROPERTY[PERIOD][]15" value="15"><label for="PROPERTY[PERIOD][]15" title="Раз в неделю">Раз в неделю</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <input type="checkbox" class="checkbox" name="PROPERTY[PERIOD][]" id="PROPERTY[PERIOD][]16" value="16"><label for="PROPERTY[PERIOD][]16" title="Раз в 2 недели">Раз в 2 недели</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <input type="checkbox" class="checkbox" name="PROPERTY[PERIOD][]" id="PROPERTY[PERIOD][]17" value="17"><label for="PROPERTY[PERIOD][]17" title="Раз в 4 недели">Раз в 4 недели</label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row mibok-add-filter1 row mibok-filter-buttons">
+
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="pull-right1">
+                                                    <div class="mibok-filter-btn"><button class="btn fx-bubbleUp" type="submit" name="set_filter">Применить</button></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="pull-right1">
+                                                    <div class="mibok-filter-btn"><button class="btn fx-bubbleUp" type="submit" name="del_filter">Сбросить</button></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hidden">
+                                    <input type="submit" name="set_filter" value="Фильтр" />
+                                    <input type="hidden" name="set_filter" value="Y" />&nbsp;&nbsp;
+                                    <input type="submit" name="del_filter" value="Сбросить" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div class="tiva-events-calendar full" data-source="json" data-start="monday" data-switch="hide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+//= blocks/subs.html
+//= blocks/partners.html
+
+//= blocks/footer.html
+//= blocks/popup.html
+//= blocks/script.html
+
+</body>
+</html>

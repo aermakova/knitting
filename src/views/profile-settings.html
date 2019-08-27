@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>РАВНЫЙ КОНСУЛЬТАНТ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+
+//= blocks/header.html
+<main class="main">
+    <section class="head">
+        <h1 class="head-title text-white">ПРОФИЛЬ ПОЛЬЗОВАТЕЛЯ</h1>
+    </section>
+    <section class="page">
+        <div class="container-fluid">
+            //= blocks/breadcrumbs.html
+            <div class="row">
+                //= blocks/aside-left.html
+                <div class="col-lg-6">
+                    <div class="profile-settings">
+                        <form method="post" action="#" name="" class="login-form">
+                            <div id="settings-panel" class="settings-panel">
+                                <fieldset id="settings-panel0" class="settings-panel__item">
+                                    <a class="collapsed-link collapsed font-weight-bold" data-parent="#settings-panel" href="#settings-dropdown-0" aria-expanded="true" aria-controls="settings-dropdown-0" data-toggle="collapse">Регистрационная информация</a>
+                                    <div id="settings-dropdown-0" class="panel-collapse collapse" aria-labelledby="settings-panel0">
+                                        <table class="settings-panel-table">
+                                            <tr>
+                                                <td class="cell-left"><b>Дата обновления:</b></td>
+                                                <td class="cell-right">26.02.2019 19:46:08</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-left"><b>Последняя авторизация:</b></td>
+                                                <td class="cell-right">26.02.2019 19:46:08</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                           <div class="col-md-6 order-md-0 order-1">
+                                               <div class="login-form__group">
+                                                   <label for="USER_SETTINGS_TEXT">Обращение</label>
+                                                   <textarea id="USER_SETTINGS_TEXT" type="text" name="USER_SETTINGS_TEXT" placeholder="Обращение" class="input input-textarea bx-auth-input"></textarea>
+                                               </div>
+                                               <div class="login-form__group">
+                                                   <label for="USER_SETTINGS_NAME">Имя</label>
+                                                   <input id="USER_SETTINGS_NAME" type="text" name="USER_SETTINGS_NAME" maxlength="50" value="" placeholder="Имя" class="input bx-auth-input">
+                                               </div>
+                                               <div class="login-form__group">
+                                                   <label for="USER_SETTINGS_PATRONYMIK">Отчество</label>
+                                                   <input id="USER_SETTINGS_PATRONYMIK" type="password" name="USER_SETTINGS_PATRONYMIK" maxlength="50" value="" placeholder="Отчество" class="input bx-auth-input" autocomplete="off">
+                                               </div>
+                                               <div class="login-form__group">
+                                                   <label for="USER_SETTINGS_SURNAME">Фамилия</label>
+                                                   <input id="USER_SETTINGS_SURNAME" type="password" name="USER_SETTINGS_SURNAME" maxlength="50" value="" placeholder="Фамилия" class="input bx-auth-input" autocomplete="off">
+                                               </div>
+                                               <div class="login-form__group">
+                                                   <label for="USER_SETTINGS_EMAIL" class="starrequired">E-Mail:</label>
+                                                   <input id="USER_SETTINGS_EMAIL" type="text" name="USER_SETTINGS_EMAIL" maxlength="255" value="" placeholder="E-Mail:" class="input bx-auth-input">
+                                               </div>
+                                               <div class="login-form__group">
+                                                   <label for="USER_SETTINGS_PASSWORD" class="starrequired">Новый пароль</label>
+                                                   <input id="USER_SETTINGS_PASSWORD" type="password" name="USER_PASSWORD" maxlength="50" value="" placeholder="Новый пароль*" class="input bx-auth-input" autocomplete="off">
+                                               </div>
+                                               <div class="login-form__group">
+                                                   <label for="USER_SETTINGS_PASSWORD" class="starrequired">Подтверждение пароля</label>
+                                                   <input id="USER_SETTINGS_PASSWORD" type="password" name="USER_PASSWORD" maxlength="50" value="" placeholder="Подтверждение пароля" class="input bx-auth-input" autocomplete="off">
+                                               </div>
+                                           </div>
+                                           <div class="col-md-6 order-md-1 order-0">
+                                               <div id="file-upload-wrap" class="file-upload-wrap">
+                                                   <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+                                                   <label for="file-upload" id="file-drag">
+                                                       <img id="file-image" src="#" alt="Preview" class="hidden">
+                                                       <div id="file-start">
+                                                           <div id="file-notimage" class="hidden">Выберите изображение</div>
+                                                           <span id="file-upload-btn" class="btn fx-bubbleUp">ЗАГРУЗИТЬ</span>
+                                                       </div>
+                                                       <div id="file-response" class="hidden">
+                                                           <div id="file-messages"></div>
+                                                           <progress class="file-progress" id="file-progress" value="0">
+                                                               <span>0</span>%
+                                                           </progress>
+                                                       </div>
+                                                   </label>
+                                               </div>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset id="settings-panel1" class="settings-panel__item">
+                                    <a class="collapsed-link collapsed font-weight-bold" data-parent="#settings-panel" href="#settings-dropdown-1" aria-expanded="true" aria-controls="settings-dropdown-1" data-toggle="collapse">Личные данные</a>
+                                    <div id="settings-dropdown-1" class="panel-collapse collapse" aria-labelledby="settings-panel1">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="login-form__group mibok-wrapper">
+                                                    <div class="mibok-wrapper-filter">
+                                                        <div class="align-items-center">
+                                                            <div class="mibok-add-filter">
+                                                                <div class="mibok-dropdown select-dropdown">
+                                                                    <a href="#" class="mibok-filter-name" data-toggle="dropdown" aria-expanded="false">Пол<span class="ic-m-t-bottom"></span></a>
+                                                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                                                        <ul class="scroll-visible ps-container ps-theme-default" data-ps-id="">
+                                                                            <li>
+                                                                                <div>
+                                                                                    <input type="checkbox" class="checkbox" name="" id="PROPERTY[CITIES][]2049" value="2049"><label for="PROPERTY[CITIES][]2049" title="Все города">Все города</label>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div>
+                                                                                    <input type="checkbox" class="checkbox" name="" id="PROPERTY[CITIES][]2050" value="2050"><label for="PROPERTY[CITIES][]2050" title="Москва">Москва</label>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="login-form__group">
+                                                    <p class="text-pink size-middle"><b>Почтовый адрес</b></p>
+                                                </div>
+                                                <div class="login-form__group mibok-wrapper">
+                                                    <div class="mibok-wrapper-filter">
+                                                        <div class="align-items-center">
+                                                            <div class="mibok-add-filter">
+                                                                <div class="mibok-dropdown select-dropdown">
+                                                                    <a href="#" class="mibok-filter-name" data-toggle="dropdown" aria-expanded="false">Город<span class="ic-m-t-bottom"></span></a>
+                                                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                                                        <ul class="scroll-visible ps-container ps-theme-default" data-ps-id="">
+                                                                            <li>
+                                                                                <div>
+                                                                                    <input type="checkbox" class="checkbox" name="PROPERTY[CITIES][]" id="PROPERTY[CITIES][]2049" value="2049"><label for="PROPERTY[CITIES][]2049" title="Все города">Все города</label>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div>
+                                                                                    <input type="checkbox" class="checkbox" name="PROPERTY[CITIES][]" id="PROPERTY[CITIES][]2050" value="2050"><label for="PROPERTY[CITIES][]2050" title="Москва">Москва</label>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_TEXT">Дата рождения</label>
+                                                    <input type="date" id="arrFilter_DATE_ACTIVE_FROM_2" name="arrFilter_DATE_ACTIVE_FROM_2" placeholder="Дата рождения DD.MM.YYYY" size="10" class="inputselect inputfield input-calendar input">
+                                                    <img src="img/calendar-icon.jpg" alt="Выбрать дату в календаре" class="calendar-icon" border="0">
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_PHONE">Телефон</label>
+                                                    <input id="USER_SETTINGS_PHONE" type="tel" name="USER_SETTINGS_PHONE" maxlength="50" value="" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="input bx-auth-input" autocomplete="on">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_REGION">Область / Край</label>
+                                                    <textarea id="USER_SETTINGS_REGION" type="text" name="USER_SETTINGS_REGION" placeholder="Область / Край" class="input input-textarea"></textarea>
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_CITY">Город</label>
+                                                    <textarea id="USER_SETTINGS_CITY" type="text" name="USER_SETTINGS_CITY" placeholder="Город" class="input input-textarea bx-auth-input"></textarea>
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_INDEX">Почтовый индекс</label>
+                                                    <input type="text" id="USER_SETTINGS_INDEX" name="USER_SETTINGS_INDEX" placeholder="Почтовый индекс" size="10" class="input">
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_STREET">Улица, дом</label>
+                                                    <textarea id="USER_SETTINGS_STREET" type="text" name="USER_SETTINGS_STREET" placeholder="Улица, дом" class="input input-textarea textarea-big"></textarea>
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_BOX">Почтовый ящик</label>
+                                                    <input type="text" id="USER_SETTINGS_BOX" name="USER_SETTINGS_BOX" placeholder="Почтовый ящик" size="10" class="input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset id="settings-panel2" class="settings-panel__item">
+                                    <a class="collapsed-link collapsed font-weight-bold" data-parent="#settings-panel" href="#settings-dropdown-2" aria-expanded="true" aria-controls="settings-dropdown-2" data-toggle="collapse">Информация о работе</a>
+                                    <div id="settings-dropdown-2" class="panel-collapse collapse" aria-labelledby="settings-panel2">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_COMPANY">Наименование компании</label>
+                                                    <textarea id="USER_SETTINGS_COMPANY" type="text" name="USER_SETTINGS_COMPANY" placeholder="Наименование компании:" class="input input-textarea"></textarea>
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_WWW">WWW-страница</label>
+                                                    <textarea id="USER_SETTINGS_WWW" type="url" name="USER_SETTINGS_WWW" placeholder="WWW-страница:" class="input input-textarea"></textarea>
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_PHONE1">Телефон</label>
+                                                    <input id="USER_SETTINGS_PHONE1" type="tel" name="USER_SETTINGS_PHONE1" maxlength="50" value="" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="input bx-auth-input" autocomplete="on">
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_DEPART">Департамент / Отдел:</label>
+                                                    <textarea id="USER_SETTINGS_DEPART" type="text" name="USER_SETTINGS_DEPART" placeholder="Департамент / Отдел" class="input input-textarea"></textarea>
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_WORK">Должность:</label>
+                                                    <textarea id="USER_SETTINGS_WORK" type="text" name="USER_SETTINGS_WORK" placeholder="Должность" class="input input-textarea"></textarea>
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_WORK1">Направления деятельности:</label>
+                                                    <textarea id="USER_SETTINGS_WORK1" type="text" name="USER_SETTINGS_WORK1" placeholder="Направления деятельности" class="input input-textarea textarea-big"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="login-form__group">
+                                                    <p class="text-pink size-middle"><b>Почтовый адрес</b></p>
+                                                </div>
+                                                <div class="login-form__group mibok-wrapper">
+                                                    <div class="mibok-wrapper-filter">
+                                                        <div class="align-items-center">
+                                                            <div class="mibok-add-filter">
+                                                                <div class="mibok-dropdown select-dropdown">
+                                                                    <a href="#" class="mibok-filter-name" data-toggle="dropdown" aria-expanded="false">Город<span class="ic-m-t-bottom"></span></a>
+                                                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                                                        <ul class="scroll-visible ps-container ps-theme-default" data-ps-id="">
+                                                                            <li>
+                                                                                <div>
+                                                                                    <input type="checkbox" class="checkbox" name="PROPERTY[CITIES][]" id="PROPERTY[CITIES][]2049" value="2049"><label for="PROPERTY[CITIES][]2049" title="Все города">Все города</label>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div>
+                                                                                    <input type="checkbox" class="checkbox" name="PROPERTY[CITIES][]" id="PROPERTY[CITIES][]2050" value="2050"><label for="PROPERTY[CITIES][]2050" title="Москва">Москва</label>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_REGION1">Область / Край</label>
+                                                    <textarea id="USER_SETTINGS_REGION1" type="text" name="USER_SETTINGS_REGION1" placeholder="Область / Край" class="input input-textarea"></textarea>
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_CITY1">Город</label>
+                                                    <textarea id="USER_SETTINGS_CITY1" type="text" name="USER_SETTINGS_CITY1" placeholder="Город" class="input input-textarea bx-auth-input"></textarea>
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_INDEX1">Почтовый индекс</label>
+                                                    <input type="text" id="USER_SETTINGS_INDEX1" name="USER_SETTINGS_INDEX1" placeholder="Почтовый индекс" size="10" class="input">
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_STREET1">Улица, дом</label>
+                                                    <textarea id="USER_SETTINGS_STREET1" type="text" name="USER_SETTINGS_STREET1" placeholder="Улица, дом" class="input input-textarea textarea-big"></textarea>
+                                                </div>
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_BOX1">Почтовый ящик</label>
+                                                    <input type="text" id="USER_SETTINGS_BOX1" name="USER_SETTINGS_BOX1" placeholder="Почтовый ящик" size="10" class="input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset id="settings-panel3" class="settings-panel__item">
+                                    <a class="collapsed-link collapsed font-weight-bold" data-parent="#settings-panel" href="#settings-dropdown-3" aria-expanded="true" aria-controls="settings-dropdown-3" data-toggle="collapse">Профиль форума</a>
+                                    <div id="settings-dropdown-3" class="panel-collapse collapse" aria-labelledby="settings-panel3">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_PHONE1">Телефон</label>
+                                                    <input id="USER_SETTINGS_PHONE1" type="tel" name="USER_SETTINGS_PHONE1" maxlength="50" value="" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="input bx-auth-input" autocomplete="on">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset id="settings-panel4" class="settings-panel__item">
+                                    <a class="collapsed-link collapsed font-weight-bold" data-parent="#settings-panel" href="#settings-dropdown-4" aria-expanded="true" aria-controls="settings-dropdown-4" data-toggle="collapse">Профиль блога</a>
+                                    <div id="settings-dropdown-4" class="panel-collapse collapse" aria-labelledby="settings-panel4">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_PHONE1">Телефон</label>
+                                                    <input id="USER_SETTINGS_PHONE1" type="tel" name="USER_SETTINGS_PHONE1" maxlength="50" value="" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="input bx-auth-input" autocomplete="on">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                                <fieldset id="settings-panel5" class="settings-panel__item">
+                                    <a class="collapsed-link collapsed font-weight-bold" data-parent="#settings-panel" href="#settings-dropdown-5" aria-expanded="true" aria-controls="settings-dropdown-5" data-toggle="collapse">Заметки администратора</a>
+                                    <div id="settings-dropdown-5" class="panel-collapse collapse" aria-labelledby="settings-panel5">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="login-form__group">
+                                                    <label for="USER_SETTINGS_PHONE1">Телефон</label>
+                                                    <input id="USER_SETTINGS_PHONE1" type="tel" name="USER_SETTINGS_PHONE1" maxlength="50" value="" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="input bx-auth-input" autocomplete="on">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row profile-settings__btn">
+
+                                            <div class="col-md-6"><button class="btn fx-bubbleUp" type="submit" name="set_filter">СОХРАНИТЬ</button></div>
+                                            <div class="col-md-6"><button class="btn fx-bubbleUp" type="submit" name="set_filter">Сбросить</button></div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </form>
+                        <p>Вы можете связать свой профиль с профилями в социальных сетях и сервисах:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+//= blocks/subs.html
+//= blocks/partners.html
+
+//= blocks/footer.html
+//= blocks/popup.html
+//= blocks/script.html
+
+</body>
+</html>
